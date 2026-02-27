@@ -12,15 +12,19 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
-        policy => policy.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
+    options.AddPolicy("AllowReact",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:3001")
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        });
 });
 
 var app = builder.Build();
 
-app.UseCors("AllowAll");
+app.UseHttpsRedirection();
+app.UseCors("AllowReact");
 
 app.UseSwagger();
 app.UseSwaggerUI();

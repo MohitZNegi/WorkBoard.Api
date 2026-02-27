@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchTasks } from "./taskSlice";
+import TaskInput from "./components/TaskInput";
+import TaskList from "./components/TaskList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchTasks());
+    }, [dispatch]);
+
+    return (
+        <div style={{ padding: "20px" }}>
+            <h2>Mini WorkBoard</h2>
+
+            <TaskInput />
+            <TaskList />
+        </div>
+    );
 }
 
 export default App;

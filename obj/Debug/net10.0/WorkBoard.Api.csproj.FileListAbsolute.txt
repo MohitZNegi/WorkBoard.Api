@@ -160,3 +160,7 @@ D:\CERTIFICATES AND SELF LEARNING\2026_React\WorkBoard.Api\obj\Debug\net10.0\ref
 D:\CERTIFICATES AND SELF LEARNING\2026_React\WorkBoard.Api\obj\Debug\net10.0\WorkBoard.Api.pdb
 D:\CERTIFICATES AND SELF LEARNING\2026_React\WorkBoard.Api\obj\Debug\net10.0\WorkBoard.Api.genruntimeconfig.cache
 D:\CERTIFICATES AND SELF LEARNING\2026_React\WorkBoard.Api\obj\Debug\net10.0\ref\WorkBoard.Api.dll
+D:\CERTIFICATES AND SELF LEARNING\2026_React\WorkBoard.Api\bin\Debug\net10.0\workboard-ui\package-lock.json
+D:\CERTIFICATES AND SELF LEARNING\2026_React\WorkBoard.Api\bin\Debug\net10.0\workboard-ui\package.json
+D:\CERTIFICATES AND SELF LEARNING\2026_React\WorkBoard.Api\bin\Debug\net10.0\workboard-ui\public\manifest.json
+D:\CERTIFICATES AND SELF LEARNING\2026_React\WorkBoard.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
