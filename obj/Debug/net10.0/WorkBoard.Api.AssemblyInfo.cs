@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkBoard.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3da25b8d6c33359a404b0f8430b9c73cc8f1c13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cda40ef07b9b856aaa45ddb31a1e97af3fb06b32")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkBoard.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkBoard.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

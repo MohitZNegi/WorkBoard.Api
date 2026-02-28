@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchTasks } from "./taskSlice";
+import { fetchTasks } from "./features/tasks/taskSlice";
 import TaskInput from "./components/TaskInput";
 import TaskList from "./components/TaskList";
 
