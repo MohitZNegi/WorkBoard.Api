@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Page Background */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main Container */
+.app-container {
+    background: #ffffff;
+    width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    /* Heading */
+    .app-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #1e3c72;
+    }
+
+/* Input Section */
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+    .task-input input {
+        flex: 1;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+        .task-input input:focus {
+            outline: none;
+            border-color: #2a5298;
+        }
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    button:hover {
+        transform: scale(1.05);
+    }
+
+/* Add Button */
+.add-btn {
+    background-color: #2a5298;
+    color: white;
+}
+
+    .add-btn:hover {
+        background-color: #1e3c72;
+    }
+
+/* Delete Button */
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+    .delete-btn:hover {
+        background-color: #c0392b;
+    }
+
+/* Task List */
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #f4f6f9;
+    transition: 0.2s ease;
+}
+
+    li:hover {
+        background-color: #e8edf5;
+    }
+
+/* Task Title */
+.task-title {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Completed */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.pending {
+    background-color: #f39c12;
+    color: white;
+}
+
+.done {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* Loading Text */
+.loading {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
 }

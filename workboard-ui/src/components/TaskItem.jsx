@@ -7,19 +7,30 @@ function TaskItem({ task }) {
 
     return (
         <li>
-            <span
-                style={{
-                    textDecoration: task.isCompleted ? "line-through" : "none",
-                    cursor: "pointer"
-                }}
-                onClick={() => dispatch(toggleTask(task.id))}
-            >
-                {task.title}
-            </span>
+            <div>
+                <span
+                    className={`task-title ${task.isCompleted ? "completed" : ""}`}
+                    onClick={() => dispatch(toggleTask(task.id))}
+                >
+                    {task.title}
+                </span>
+            </div>
 
-            <button onClick={() => dispatch(deleteTask(task.id))}>
-                ❌
-            </button>
+            <div>
+                <span
+                    className={`status-badge ${task.isCompleted ? "done" : "pending"
+                        }`}
+                >
+                    {task.isCompleted ? "Completed" : "Pending"}
+                </span>
+
+                <button
+                    className="delete-btn"
+                    onClick={() => dispatch(deleteTask(task.id))}
+                >
+                    Delete
+                </button>
+            </div>
         </li>
     );
 }

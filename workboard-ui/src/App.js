@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { fetchTasks } from "./features/tasks/taskSlice";
 import TaskInput from "./components/TaskInput";
 import TaskList from "./components/TaskList";
+import "./App.css";
 
 function App() {
     const dispatch = useDispatch();
@@ -12,7 +13,7 @@ function App() {
     }, [dispatch]);
 
     return (
-        <div style={{ padding: "20px" }}>
+        <div className="app-container"  style={{ padding: "20px" }}>
             <h2>Mini WorkBoard</h2>
 
             <TaskInput />

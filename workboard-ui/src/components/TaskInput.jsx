@@ -14,13 +14,13 @@ function TaskInput() {
     };
 
     return (
-        <div>
+        <div className="task-input">
             <input
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 placeholder="Enter task"
             />
-            <button onClick={handleAdd}>
+            <button className="add-btn" onClick={handleAdd}>
                 Add
             </button>
         </div>
